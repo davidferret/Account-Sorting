@@ -3,7 +3,6 @@
 #define MAXLINE 8
 #define MAXCHAR 30
 
-// Function prototypes
 void readData(int acc[], char name[][MAXCHAR], float balance[], int *size);
 void sortData(int acc[], char name[][MAXCHAR], float balance[], int size, int sortBy);
 void displayData(int acc[], char name[][MAXCHAR], float balance[], int size);
@@ -31,7 +30,6 @@ int main(void) {
     return 0;
 }
 
-// Function to read data from file
 void readData(int acc[], char name[][MAXCHAR], float balance[], int *size) {
     FILE *fpt = fopen("data.txt", "r");
     if (fpt == NULL) {
@@ -46,7 +44,6 @@ void readData(int acc[], char name[][MAXCHAR], float balance[], int *size) {
     fclose(fpt);
 }
 
-// Function to sort data based on user choice
 void sortData(int acc[], char name[][MAXCHAR], float balance[], int size, int sortBy) {
     int temp_acc;
     char temp_name[MAXCHAR];
@@ -81,7 +78,7 @@ void sortData(int acc[], char name[][MAXCHAR], float balance[], int size, int so
     }
 }
 
-// Function to display sorted data
+
 void displayData(int acc[], char name[][MAXCHAR], float balance[], int size) {
     printf("%7s%13s%13s\n", "Account", "Name", "Balance");
     for (int j = 0; j < size; j++) {
@@ -89,7 +86,6 @@ void displayData(int acc[], char name[][MAXCHAR], float balance[], int size) {
     }
 }
 
-// Function to save sorted data to a file
 void saveToFile(int acc[], char name[][MAXCHAR], float balance[], int size) {
     FILE *fpw = fopen("newdata.txt", "w");
     if (!fpw) {
