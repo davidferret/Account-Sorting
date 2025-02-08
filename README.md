@@ -1,14 +1,12 @@
-# Account Sorting Program
+# Account Sorting Project
 
-This program reads account data, sorts it based on user preferences, and saves the results to a file.
+This C project reads account data, sorts it based on your preferences, and saves the results to a file. The way it works is by taking account numbers, names, and balances from a file, allowing you to choose how you want them sorted, and then displaying and saving the sorted data in a structured format.
 
-- **Data Input**: Reads account numbers, names, and balances from a file.
-- **Sorting Options**: Allows sorting by account number, name (alphabetically), or balance (descending).
-- **Data Display**: Presents sorted results in a structured format.
-- **File Output**: Saves the sorted data to a new text file.
-- **User-Friendly Interface**: Provides sorting options through an interactive prompt.
+You can sort the accounts in three different ways: by account number, alphabetically by name, or by balance in descending order. The interactive prompt makes it easy to select your preferred sorting method. Once sorted, the data is displayed in a structured format, and if needed, it can be saved to a new text file for future reference.
 
-## Example Usage
+I built this project as a way to practice file handling and sorting techniques while working with structured data. Organizing information efficiently is a key part of many applications, and this project provided a great opportunity to explore different sorting methods and optimize their implementation. My goal was to create a tool that makes sorting account data simple, intuitive, and efficient.
+
+## Example Output
 ```
 Choose sorting method:
 1 - Sort by Account Number
